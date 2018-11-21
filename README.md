@@ -23,3 +23,17 @@ Copyright (c) CSIRO 2018. All rights reserved.
 
 ## Implementations
 List of ANZSoilML implementations
+
+Federation University Australia (CeRDI)
+http://services.cerdi.edu.au/anzsoilml/wfs?request=getCapabilities 
+
+FeatureType request endpoints
+Soil Specimen
+http://services.cerdi.edu.au/anzsoilml/wfs?request=getFeature&typeName=anzsmlss:SoilSpecimen&count=10&maxFeatures=10
+Observations
+http://services.cerdi.edu.au/anzsoilml/wfs?request=getFeature&typeName=om:OM_Observation&count=10&maxFeatures=10
+
+Basic WFS request Router (friendly URLs for Feature ID requests) 
+http://id.cerdi.edu.au/anzsoilml/feature/specimen/1
+http://id.cerdi.edu.au/anzsoilml/feature/observation/1
+Note: These default to WFS version 2.0.0 and outputFormat GML3.2  (requests to WFS 1.x.x result in malformed outputs)
